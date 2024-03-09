@@ -1,0 +1,81 @@
+html,
+body {
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family:'futura';
+  color:rgb(28, 18, 8);
+  background-color: #e5e5e5;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.output{
+  max-width: 100px;
+  max-height: 100px;
+  
+}
+.app {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f3e9;
+
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(251, 248, 244, 0.35);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: #d48824;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#todos {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  overflow-y: auto;
+}
+
+#todos div {
+ 
+  background-color: rgba(210, 170, 114, 0.35);
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+}
+
+#todos div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#todos div .options i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
